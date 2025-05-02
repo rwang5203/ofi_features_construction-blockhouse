@@ -45,7 +45,7 @@ Computes depth-scaled order flow across multiple levels (10 in this case):
     ```
 2. Scale and sum OFIs:
     ```python
-    multi_level_OFI = sum(OFI_m / depth for m in 0-9)
+    multi_level_OFI = sum(OFI_m for m in 0-9) / depth
     ```
 
 ### Integrated OFI
